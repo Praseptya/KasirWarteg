@@ -1,0 +1,96 @@
+::-webkit-search-cancel-button {
+  cursor: pointer;
+  margin-right: -4px;
+  padding: 2px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f3f3f3;
+  min-height: 100vh;
+}
+img.scrollup {
+  height: 50px;
+  width: 50px;
+}
+.scrollup {
+  border: none;
+  border-radius: 50%;
+  bottom: 700px;
+  cursor: pointer;
+  opacity: 0;
+  position: fixed;
+  right: 40px;
+  transform: rotate(90deg);
+  transition: 0.5s;
+  visibility: hidden;
+  z-index: 99;
+}
+.scrollup.yes {
+  bottom: 40px;
+  opacity: 0.6;
+  visibility: visible;
+}
+.scrollup.yes:hover {
+  opacity: 1;
+}
+.pointer {
+  cursor: pointer;
+}
+.font-sm {
+  font-size: small;
+}
+hr.hr-dashed {
+  border-top: 1px dashed gray;
+}
+table.nota {
+  margin: auto;
+  width: 100%;
+}
+.nota td.menu {
+  width: 40%;
+}
+.nota td.qty {
+  text-align: center;
+  width: auto;
+}
+.nota td.harga {
+  text-align: center;
+  width: 23%;
+}
+.nota td.jumlah {
+  text-align: right;
+  width: 23%;
+}
+.login-card {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border: 0;
+  border-radius: 27.5px;
+  overflow: hidden;
+}
+.login-card-img {
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.login-card .card-body {
+  padding: 85px 60px 60px;
+}
+@media (max-width: 422px) {
+  .login-card .card-body {
+    padding: 35px 24px;
+  }
+}
+.login-card .form-control {
+  border: 1px solid #d5dae2;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  min-height: 45px;
+  font-size: 13px;
+  line-height: 15;
+  font-weight: normal;
+}
